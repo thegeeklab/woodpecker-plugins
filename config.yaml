@@ -1,0 +1,31 @@
+---
+baseURL: https://drone-plugins.geekdocs.de/
+title: Drone CI Plugins
+theme: hugo-geekdoc
+
+# Required to get well formatted code blocks
+pygmentsUseClasses: true
+pygmentsCodeFences: true
+
+disablePathToLower: true
+enableGitInfo: true
+
+markup:
+  goldmark:
+    # Needed for mermaid shortcode
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+    endLevel: 9
+
+params:
+  geekdocToC: 3
+
+  geekdocDateFormat: "Jan 2, 2006"
+  geekdocSearch: true
+
+  geekdocAnchorLeft: true
+
+  geekdocLegalNotice: https://thegeeklab.de/legal-notice/#contact-information
+  geekdocPrivacyPolicy: https://thegeeklab.de/legal-notice/#privacy-policy
