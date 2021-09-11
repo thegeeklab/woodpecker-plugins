@@ -1,5 +1,5 @@
 ---
-baseURL: https://drone-plugins.geekdocs.de/
+baseURL: https://drone-plugin-index.geekdocs.de/
 title: Drone CI Plugins
 theme: hugo-geekdoc
 
