@@ -1,6 +1,7 @@
 repository:
   name: drone-plugin-index
   description: Drone custom plugin index
+  homepage: https://drone-plugin-index.geekdocs.de
   topics: drone, drone-plugin
 
   private: false
