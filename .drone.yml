@@ -16,35 +16,35 @@ steps:
   image: thegeeklab/git-batch
   name: sync
 - commands:
-  - markdownlint 'docs/content/**/*.md' 'README.md' 'CONTRIBUTING.md'
+  - markdownlint 'content/**/*.md' 'README.md' 'CONTRIBUTING.md'
   image: thegeeklab/markdownlint-cli
   name: markdownlint
 - commands:
   - npm install -g spellchecker-cli
-  - spellchecker --files 'docs/content/**/*.md' 'README.md' -d .dictionary -p spell
-    indefinite-article syntax-urls --no-suggestions
+  - spellchecker --files 'content/**/*.md' 'README.md' -d .dictionary -p spell indefinite-article
+    syntax-urls --no-suggestions
   environment:
     FORCE_COLOR: true
     NPM_CONFIG_LOGLEVEL: error
   image: node:lts-alpine
   name: spellcheck
 - commands:
-  - hugo -s docs/ -b http://localhost/
+  - hugo -b http://localhost/
   image: thegeeklab/hugo:0.83.1
   name: testbuild
 - commands:
   - link-validator -ro
   environment:
-    LINK_VALIDATOR_BASE_DIR: docs/public
+    LINK_VALIDATOR_BASE_DIR: public
   image: thegeeklab/link-validator
   name: link-validation
 - commands:
-  - hugo -s docs/
+  - hugo
   image: thegeeklab/hugo:0.83.1
   name: build
 - commands:
   - npm install -g js-beautify
-  - html-beautify -r -f 'docs/public/**/*.html'
+  - html-beautify -r -f 'public/**/*.html'
   environment:
     FORCE_COLOR: true
     NPM_CONFIG_LOGLEVEL: error
@@ -61,8 +61,8 @@ steps:
     path_style: true
     secret_key:
       from_secret: s3_secret_access_key
-    source: docs/public/
-    strip_prefix: docs/public/
+    source: public/
+    strip_prefix: public/
     target: /${DRONE_REPO_NAME}
   when:
     ref:
@@ -75,6 +75,6 @@ trigger:
   - refs/pull/**
 ---
 kind: signature
-hmac: ade2128e9bd2cdac2df077a5832d803252234bd4b9c50a1dcaaed1f94f1d1dee
+hmac: 79ea19f08d85bbcc0b69bd8b04a9f9b092acfcca1e4eb530451f5f8055db7217
 
 ...

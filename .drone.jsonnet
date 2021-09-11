@@ -27,7 +27,7 @@ local PipelineDocs = {
       name: 'markdownlint',
       image: 'thegeeklab/markdownlint-cli',
       commands: [
-        "markdownlint 'docs/content/**/*.md' 'README.md' 'CONTRIBUTING.md'",
+        "markdownlint 'content/**/*.md' 'README.md' 'CONTRIBUTING.md'",
       ],
     },
     {
@@ -35,7 +35,7 @@ local PipelineDocs = {
       image: 'node:lts-alpine',
       commands: [
         'npm install -g spellchecker-cli',
-        "spellchecker --files 'docs/content/**/*.md' 'README.md' -d .dictionary -p spell indefinite-article syntax-urls --no-suggestions",
+        "spellchecker --files 'content/**/*.md' 'README.md' -d .dictionary -p spell indefinite-article syntax-urls --no-suggestions",
       ],
       environment: {
         FORCE_COLOR: true,
@@ -46,7 +46,7 @@ local PipelineDocs = {
       name: 'testbuild',
       image: 'thegeeklab/hugo:0.83.1',
       commands: [
-        'hugo -s docs/ -b http://localhost/',
+        'hugo -b http://localhost/',
       ],
     },
     {
@@ -56,14 +56,14 @@ local PipelineDocs = {
         'link-validator -ro',
       ],
       environment: {
-        LINK_VALIDATOR_BASE_DIR: 'docs/public',
+        LINK_VALIDATOR_BASE_DIR: 'public',
       },
     },
     {
       name: 'build',
       image: 'thegeeklab/hugo:0.83.1',
       commands: [
-        'hugo -s docs/',
+        'hugo',
       ],
     },
     {
@@ -71,7 +71,7 @@ local PipelineDocs = {
       image: 'node:lts-alpine',
       commands: [
         'npm install -g js-beautify',
-        "html-beautify -r -f 'docs/public/**/*.html'",
+        "html-beautify -r -f 'public/**/*.html'",
       ],
       environment: {
         FORCE_COLOR: true,
@@ -88,8 +88,8 @@ local PipelineDocs = {
         endpoint: 'https://sp.rknet.org',
         path_style: true,
         secret_key: { from_secret: 's3_secret_access_key' },
-        source: 'docs/public/',
-        strip_prefix: 'docs/public/',
+        source: 'public/',
+        strip_prefix: 'public/',
         target: '/${DRONE_REPO_NAME}',
       },
       when: {
