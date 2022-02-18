@@ -20,6 +20,11 @@ markup:
     endLevel: 9
 
 params:
+  description: >
+    Custom Drone CI Plugin Index that provies an overview and documenation for all Drone CI resources of the Geeklab project.
+  images:
+    - "socialmedia2.png"
+
   geekdocToC: 3
 
   geekdocDateFormat: "Jan 2, 2006"
