@@ -2,8 +2,7 @@
 title: Documentation
 ---
 
-{{< hint warning >}}
-**Warning**\
+{{< hint type=important >}}
 You should not trust any Docker resource on the internet without verification! Use it at your own risk.
 {{< /hint >}}
 
