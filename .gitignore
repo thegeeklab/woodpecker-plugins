@@ -1,4 +1,17 @@
-public/
-resources/_gen/
-themes/
-content/**/
+# local environments
+.swp
+.env*
+/dist/
+/build/
+/node_modules/
+
+# auto-generated files
+/themes/
+/public/
+/static/
+/resources/
+/content/**/
+/content/collections/
+
+# hugo
+.hugo_build.lock

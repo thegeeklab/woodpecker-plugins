@@ -46,14 +46,14 @@ local PipelineDocs = {
       name: 'testbuild',
       image: 'thegeeklab/hugo:0.97.3',
       commands: [
-        'hugo --panicOnWarning -b http://localhost/',
+        'hugo --panicOnWarning -b http://localhost:8000/',
       ],
     },
     {
       name: 'link-validation',
       image: 'thegeeklab/link-validator',
       commands: [
-        'link-validator -ro',
+        'link-validator --nice --external --skip-file .linkcheckignore',
       ],
       environment: {
         LINK_VALIDATOR_BASE_DIR: 'public',

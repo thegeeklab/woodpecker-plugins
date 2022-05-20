@@ -37,12 +37,12 @@ steps:
   - name: testbuild
     image: thegeeklab/hugo:0.97.3
     commands:
-      - hugo --panicOnWarning -b http://localhost/
+      - hugo --panicOnWarning -b http://localhost:8000/
 
   - name: link-validation
     image: thegeeklab/link-validator
     commands:
-      - link-validator -ro
+      - link-validator --nice --external --skip-file .linkcheckignore
     environment:
       LINK_VALIDATOR_BASE_DIR: public
 
@@ -87,6 +87,6 @@ trigger:
 
 ---
 kind: signature
-hmac: daefbd7df338b4ad5e69f10a57672d93acc992468ab407694b241ba7c810c184
+hmac: 21b711c2a7408288c869215d702e496ec5d887e7e817d23d12d21990f30a18d3
 
 ...
