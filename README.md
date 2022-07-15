@@ -8,8 +8,7 @@ Drone CI custom resource documentation.
 
 ## Contributors
 
-Special thanks goes to all [contributors](https://github.com/thegeeklab/drone-plugin-index/graphs/contributors). If you would like to contribute,
-please see the [instructions](https://github.com/thegeeklab/drone-plugin-index/blob/main/CONTRIBUTING.md).
+Special thanks to all [contributors](https://github.com/thegeeklab/drone-plugin-index/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/thegeeklab/drone-plugin-index/blob/main/CONTRIBUTING.md).
 
 ## License
 
