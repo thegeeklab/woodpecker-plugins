@@ -52,10 +52,11 @@ local PipelineDocs = {
       name: 'link-validation',
       image: 'thegeeklab/link-validator',
       commands: [
-        'link-validator --nice --external --skip-file .linkcheckignore',
+        'link-validator --color=always',
       ],
       environment: {
         LINK_VALIDATOR_BASE_DIR: 'public',
+        LINK_VALIDATOR_RETRIES: '3',
       },
     },
     {
