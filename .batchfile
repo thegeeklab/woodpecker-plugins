@@ -8,6 +8,7 @@ https://github.com/thegeeklab/drone-s3-sync;docs:content/;content/plugins/drone-
 https://github.com/thegeeklab/drone-s3-sync;docs:data/;data/properties/drone-s3-sync
 https://github.com/thegeeklab/drone-matrix;docs:content/;content/plugins/drone-matrix
 https://github.com/thegeeklab/drone-matrix;docs:data/;data/properties/drone-matrix
+https://github.com/thegeeklab/drone-git-action;docs:content/;content/plugins/drone-git-action
 https://github.com/thegeeklab/drone-git-action;docs:data/;data/properties/drone-git-action
 https://github.com/thegeeklab/drone-yaml;docs;content/tools/drone-yaml
 https://github.com/thegeeklab/drone-admin;docs;content/tools/drone-admin
