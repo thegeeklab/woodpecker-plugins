@@ -1,5 +1,3 @@
-https://github.com/thegeeklab/drone-docker;docs:content/;content/plugins/drone-docker
-https://github.com/thegeeklab/drone-docker;docs:data/;data/properties/drone-docker
 https://github.com/thegeeklab/drone-docker-buildx;docs:content/;content/plugins/drone-docker-buildx
 https://github.com/thegeeklab/drone-docker-buildx;docs:data/;data/properties/drone-docker-buildx
 https://github.com/thegeeklab/drone-github-comment;docs:content/;content/plugins/drone-github-comment
