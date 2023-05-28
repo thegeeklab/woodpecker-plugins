@@ -12,6 +12,7 @@
 /resources/
 /content/**/
 /content/collections/
+/data/
 
 # hugo
 .hugo_build.lock
