@@ -34,7 +34,7 @@ steps:
       NPM_CONFIG_LOGLEVEL: error
 
   - name: testbuild
-    image: thegeeklab/hugo:0.114.0
+    image: thegeeklab/hugo:0.115.2
     commands:
       - hugo --panicOnWarning -b http://localhost:8000/
 
@@ -47,7 +47,7 @@ steps:
       LINK_VALIDATOR_RETRIES: 3
 
   - name: build
-    image: thegeeklab/hugo:0.114.0
+    image: thegeeklab/hugo:0.115.2
     commands:
       - hugo --panicOnWarning
 
@@ -86,6 +86,6 @@ trigger:
 
 ---
 kind: signature
-hmac: a7b99a33996514b5b80c905a8a84f3a2d89b9629a6c650f23fb76aa51d88fa65
+hmac: f811dfa2ea86079a0ddb8a988052e14ceac8d7bb8a10fb59efa355d685c058e9
 
 ...
