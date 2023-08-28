@@ -1,5 +1,6 @@
 repository:
   name: woodpecker-plugins
+  description: Woodpecker CI custom resource documentation
   homepage: https://woodpecker-plugins.geekdocs.de
   topics: woodpecker-ci, woodpecker, woodpecker-plugin
 
