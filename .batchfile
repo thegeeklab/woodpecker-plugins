@@ -2,10 +2,9 @@ https://github.com/thegeeklab/wp-docker-buildx;docs:content/;content/plugins/wp-
 https://github.com/thegeeklab/wp-docker-buildx;docs:data/;data/properties/wp-docker-buildx
 https://github.com/thegeeklab/wp-github-comment;docs:content/;content/plugins/wp-github-comment
 https://github.com/thegeeklab/wp-github-comment;docs:data/;data/properties/wp-github-comment
-https://github.com/thegeeklab/wp-s3-sync;docs:content/;content/plugins/wp-s3-sync
-https://github.com/thegeeklab/wp-s3-sync;docs:data/;data/properties/wp-s3-sync
+https://github.com/thegeeklab/wp-s3-action;docs:content/;content/plugins/wp-s3-action
+https://github.com/thegeeklab/wp-s3-action;docs:data/;data/properties/wp-s3-action
 https://github.com/thegeeklab/wp-matrix;docs:content/;content/plugins/wp-matrix
 https://github.com/thegeeklab/wp-matrix;docs:data/;data/properties/wp-matrix
 https://github.com/thegeeklab/wp-git-action;docs:content/;content/plugins/wp-git-action
 https://github.com/thegeeklab/wp-git-action;docs:data/;data/properties/wp-git-action
-https://github.com/thegeeklab/wp-plugin-go;docs;content/misc/wp-plugin-go
