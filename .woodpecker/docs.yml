@@ -75,6 +75,3 @@ steps:
       - event: [push, manual]
         branch:
           - ${CI_REPO_DEFAULT_BRANCH}
-
-depends_on:
-  - build-package
