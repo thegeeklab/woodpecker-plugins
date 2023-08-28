@@ -1,8 +1,7 @@
 repository:
-  name: drone-plugin-index
-  description: Drone custom plugin index
-  homepage: https://drone-plugin-index.geekdocs.de
-  topics: drone, drone-plugin
+  name: woodpecker-plugins
+  homepage: https://woodpecker-plugins.geekdocs.de
+  topics: woodpecker-ci, woodpecker, woodpecker-plugin
 
   private: false
   has_issues: true
@@ -51,7 +50,10 @@ branches:
       required_status_checks:
         strict: false
         contexts:
-          - continuous-integration/drone/pr
-      enforce_admins: true
+          - ci/woodpecker/pr/test
+          - ci/woodpecker/pr/build-package
+          - ci/woodpecker/pr/build-container
+          - ci/woodpecker/pr/docs
+      enforce_admins: false
       required_linear_history: true
       restrictions: null

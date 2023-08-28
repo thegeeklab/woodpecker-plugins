@@ -1,6 +1,6 @@
 ---
-baseURL: https://drone-plugin-index.geekdocs.de/
-title: Drone CI Plugins
+baseURL: https://woodpecker-plugins.geekdocs.de/
+title: Woodpecker CI Plugins
 theme: hugo-geekdoc
 
 # Required to get well formatted code blocks
@@ -21,7 +21,7 @@ markup:
 
 params:
   description: >
-    Custom Drone CI Plugin Index that provies an overview and documenation for all Drone CI resources of the Geeklab project.
+    Custom Woodpecker CI Plugins Index that provides an overview and documentation for all Woodpecker resources in the Geeklab project.
   images:
     - "socialmedia2.png"
 

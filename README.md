@@ -1,15 +1,15 @@
-# drone-plugin-index
+# woodpecker-plugins
 
-[![Build Status](https://img.shields.io/drone/build/thegeeklab/drone-plugin-index?logo=drone&server=https%3A%2F%2Fdrone.thegeeklab.de)](https://drone.thegeeklab.de/thegeeklab/drone-plugin-index)
-[![GitHub contributors](https://img.shields.io/github/contributors/thegeeklab/drone-plugin-index)](https://github.com/thegeeklab/drone-plugin-index/graphs/contributors)
-[![License: MIT](https://img.shields.io/github/license/thegeeklab/drone-plugin-index)](https://github.com/thegeeklab/drone-plugin-index/blob/main/LICENSE)
+[![Build Status](https://ci.thegeeklab.de/api/badges/thegeeklab/woodpecker-plugins/status.svg)](https://ci.thegeeklab.de/repos/thegeeklab/woodpecker-plugins)
+[![GitHub contributors](https://img.shields.io/github/contributors/thegeeklab/woodpecker-plugins)](https://github.com/thegeeklab/woodpecker-plugins/graphs/contributors)
+[![License: MIT](https://img.shields.io/github/license/thegeeklab/woodpecker-plugins)](https://github.com/thegeeklab/woodpecker-plugins/blob/main/LICENSE)
 
-Drone CI custom resource documentation.
+Woodpecker CI custom resource documentation.
 
 ## Contributors
 
-Special thanks to all [contributors](https://github.com/thegeeklab/drone-plugin-index/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/thegeeklab/drone-plugin-index/blob/main/CONTRIBUTING.md).
+Special thanks to all [contributors](https://github.com/thegeeklab/woodpecker-plugins/graphs/contributors). If you would like to contribute, please see the [instructions](https://github.com/thegeeklab/woodpecker-plugins/blob/main/CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/thegeeklab/drone-plugin-index/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/thegeeklab/woodpecker-plugins/blob/main/LICENSE) file for details.
