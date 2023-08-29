@@ -19,7 +19,7 @@ steps:
   markdownlint:
     image: quay.io/thegeeklab/markdownlint-cli
     commands:
-      - markdownlint 'exampleSite/content/**/*.md' 'README.md' 'CONTRIBUTING.md'
+      - markdownlint 'content/**/*.md' 'README.md' 'CONTRIBUTING.md'
 
   spellcheck:
     image: quay.io/thegeeklab/alpine-tools
@@ -40,7 +40,7 @@ steps:
     commands:
       - link-validator --color=always --rate-limit 10 --timeout 60
     environment:
-      LINK_VALIDATOR_BASE_DIR: exampleSite/public
+      LINK_VALIDATOR_BASE_DIR: public
       LINK_VALIDATOR_RETRIES: "3"
 
   build:
