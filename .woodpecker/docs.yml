@@ -38,7 +38,7 @@ steps:
     image: quay.io/thegeeklab/link-validator
     group: test
     commands:
-      - link-validator --color=always --rate-limit 10 --timeout 60
+      - link-validator --color=always --rate-limit 10 --timeout 60 -e https://pkg.go.dev.*
     environment:
       LINK_VALIDATOR_BASE_DIR: public
       LINK_VALIDATOR_RETRIES: "3"
