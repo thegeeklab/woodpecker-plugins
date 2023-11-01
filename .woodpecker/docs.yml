@@ -1,7 +1,7 @@
 ---
 when:
   - event: [pull_request, tag]
-  - event: [push, manual]
+  - event: [push, manual, cron]
     branch:
       - ${CI_REPO_DEFAULT_BRANCH}
 
@@ -73,6 +73,6 @@ steps:
       target: /${CI_REPO_NAME}
     when:
       - event: [tag]
-      - event: [push, manual]
+      - event: [push, manual, cron]
         branch:
           - ${CI_REPO_DEFAULT_BRANCH}

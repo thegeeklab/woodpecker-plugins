@@ -1,7 +1,7 @@
 ---
 when:
   - event: [tag]
-  - event: [push, manual]
+  - event: [push, manual, cron]
     branch:
       - ${CI_REPO_DEFAULT_BRANCH}
 
