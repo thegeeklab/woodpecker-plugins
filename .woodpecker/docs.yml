@@ -26,7 +26,7 @@ steps:
     image: quay.io/thegeeklab/alpine-tools
     group: test
     commands:
-      - spellchecker --files 'content/**/*.md' 'README.md' -d .dictionary -p spell indefinite-article syntax-urls
+      - spellchecker --files 'content/**/*.md' 'README.md' 'CONTRIBUTING.md' -d .dictionary -p spell indefinite-article syntax-urls
     environment:
       FORCE_COLOR: "true"
 
