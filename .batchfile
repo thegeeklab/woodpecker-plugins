@@ -12,3 +12,5 @@ https://github.com/thegeeklab/wp-ansible;docs:content/;content/plugins/wp-ansibl
 https://github.com/thegeeklab/wp-ansible;docs:data/;data/properties/wp-ansible
 https://github.com/thegeeklab/wp-git-clone;docs:content/;content/plugins/wp-git-clone
 https://github.com/thegeeklab/wp-git-clone;docs:data/;data/properties/wp-git-clone
+https://github.com/thegeeklab/wp-gitea-release;docs:content/;content/plugins/wp-gitea-release
+https://github.com/thegeeklab/wp-gitea-release;docs:data/;data/properties/wp-gitea-release
