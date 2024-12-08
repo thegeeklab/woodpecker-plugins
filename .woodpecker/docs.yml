@@ -38,13 +38,12 @@ steps:
 
   - name: build
     image: ghcr.io/gohugoio/hugo:v0.136.5
+    depends_on: [link-validation]
+    commands:
+      - hugo --panicOnWarning
     backend_options:
       docker:
         user: root
-    depends_on: [link-validation]
-    commands:
-      - id
-      - hugo --panicOnWarning
 
   - name: beautify
     image: quay.io/thegeeklab/alpine-tools
