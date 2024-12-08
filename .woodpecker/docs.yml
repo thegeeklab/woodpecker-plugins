@@ -37,7 +37,7 @@ steps:
       - lychee --no-progress --format detailed content/ README.md
 
   - name: build
-    image: ghcr.io/gohugoio/hugo:v0.136.5
+    image: ghcr.io/gohugoio/hugo:v0.139.3
     depends_on: [link-validation]
     commands:
       - hugo --panicOnWarning
