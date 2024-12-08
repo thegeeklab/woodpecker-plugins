@@ -43,6 +43,7 @@ steps:
         user: root
     depends_on: [link-validation]
     commands:
+      - id
       - hugo --panicOnWarning
 
   - name: beautify
