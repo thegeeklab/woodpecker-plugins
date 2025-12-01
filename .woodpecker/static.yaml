@@ -34,7 +34,7 @@ steps:
     image: quay.io/thegeeklab/hugo:0.152
     depends_on: [sync]
     commands:
-      - hugo --panicOnWarning -s docs/
+      - hugo --panicOnWarning
 
   - name: link-validation
     image: docker.io/lycheeverse/lychee
