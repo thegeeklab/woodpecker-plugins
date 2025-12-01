@@ -1,4 +1,5 @@
 ---
+# cspell:ignore socialmedia
 baseURL: https://woodpecker-plugins.geekdocs.de/
 title: Woodpecker CI Plugins
 theme: hugo-geekdoc

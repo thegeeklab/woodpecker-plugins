@@ -1,0 +1,23 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["en_us", "html", "css"],
+  "words": [
+    "Kaussow",
+    "thegeeklab",
+    "geekdoc",
+    "Geeklab",
+    "goldmark",
+    "pygments"
+  ],
+  "ignorePaths": [
+    ".woodpecker",
+    ".cspell.json",
+    ".git/**/*",
+    ".gitignore",
+    ".vscode",
+    "Makefile",
+    "*.svg"
+  ],
+  "ignoreRegExpList": ["&\\S+;", "{{<.+>}}", "color\\:.*"]
+}

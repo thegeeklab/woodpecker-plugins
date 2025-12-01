@@ -1,0 +1,47 @@
+---
+when:
+  - event: [pull_request, tag]
+  - event: [push, manual]
+    branch:
+      - ${CI_REPO_DEFAULT_BRANCH}
+
+steps:
+  - name: markdownlint
+    image: quay.io/thegeeklab/markdownlint-cli
+    depends_on: []
+    commands:
+      - markdownlint 'README.md' 'CONTRIBUTING.md'
+
+  - name: spellcheck
+    depends_on: []
+    image: ghcr.io/streetsidesoftware/cspell
+    commands:
+      - cspell-cli lint . --gitignore --color
+
+  - name: assets
+    depends_on: []
+    image: quay.io/thegeeklab/alpine-tools
+    commands:
+      - make doc
+
+  - name: sync
+    depends_on: [assets]
+    image: quay.io/thegeeklab/git-batch
+    commands:
+      - git-batch
+
+  - name: build
+    image: quay.io/thegeeklab/hugo:0.152
+    depends_on: [sync]
+    commands:
+      - hugo --panicOnWarning
+
+  - name: link-validation
+    image: docker.io/lycheeverse/lychee
+    depends_on: [build]
+    commands:
+      - lychee --no-progress --format detailed README.md
+      - lychee --no-progress --format detailed --root-dir "$(pwd)/content" "content/**/*.html"
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_token_ro
