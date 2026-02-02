@@ -31,7 +31,7 @@ steps:
       - git-batch
 
   - name: build
-    image: quay.io/thegeeklab/hugo:0.154
+    image: quay.io/thegeeklab/hugo:0.155
     depends_on: [sync]
     commands:
       - hugo --panicOnWarning
