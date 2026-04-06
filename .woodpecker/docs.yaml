@@ -17,7 +17,7 @@ steps:
       - git-batch
 
   - name: build
-    image: quay.io/thegeeklab/hugo:0.159
+    image: quay.io/thegeeklab/hugo:0.160
     commands:
       - hugo --panicOnWarning
 
